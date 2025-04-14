@@ -1,5 +1,4 @@
-import { DurableObject } from 'cloudflare:workers';
-import { Env } from './types';
+import { DurableObject } from "cloudflare:workers"
 
 /**
  * Welcome to Cloudflare Workers! This is your first Durable Objects application.
@@ -24,7 +23,7 @@ export class MyDurableObject extends DurableObject<Env> {
    * @param env - The interface to reference bindings declared in wrangler.jsonc
    */
   constructor(ctx: DurableObjectState, env: Env) {
-    super(ctx, env);
+    super(ctx, env)
   }
 
   /**
@@ -35,7 +34,7 @@ export class MyDurableObject extends DurableObject<Env> {
    * @returns The greeting to be sent back to the Worker
    */
   async sayHello(name: string): Promise<string> {
-    return `Hello, ${name}!`;
+    return `Hello, ${name}!`
   }
 }
 
@@ -52,16 +51,16 @@ export default {
     // Create a `DurableObjectId` for an instance of the `MyDurableObject`
     // class named "foo". Requests from all Workers to the instance named
     // "foo" will go to a single globally unique Durable Object instance.
-    const id: DurableObjectId = env.MY_DURABLE_OBJECT.idFromName('foo');
+    const id: DurableObjectId = env.MY_DURABLE_OBJECT.idFromName("foo")
 
     // Create a stub to open a communication channel with the Durable
     // Object instance.
-    const stub = env.MY_DURABLE_OBJECT.get(id);
+    const stub = env.MY_DURABLE_OBJECT.get(id)
 
     // Call the `sayHello()` RPC method on the stub to invoke the method on
     // the remote Durable Object instance
-    const greeting = await stub.sayHello('world');
+    const greeting = await stub.sayHello("world")
 
-    return new Response(greeting);
+    return new Response(greeting)
   },
-} satisfies ExportedHandler<Env>;
+} satisfies ExportedHandler<Env>
