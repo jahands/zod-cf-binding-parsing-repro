@@ -20,6 +20,5 @@ test('validate bindings', async () => {
 
 	expect(BindingsSchema.safeParse(env).success).toBe(true); // should be true, but doesn't work in zod 4
 
-	// here's the error we get:
-	// expect(() => BindingsSchema.parse(env)).toThrowErrorMatchingInlineSnapshot();
+	expect(() => BindingsSchema.parse(env)).not.toThrow();
 });
