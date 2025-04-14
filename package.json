@@ -1,19 +1,21 @@
 {
-  "name": "zod-cf-binding-parsing-repro",
-  "version": "1.0.0",
-  "dependencies": {
-    "zod": "^4.0.0-beta.20250414T061543"
-  },
-  "scripts": {
-    "test": "vitest run"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.8.15",
-    "tsx": "^4.19.3",
-    "vitest": "^2.1.9",
-    "wrangler": "^4.10.0"
-  }
+	"name": "zod-cf-binding-parsing-repro",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"typescript": "^5.5.2",
+		"wrangler": "^4.10.0"
+	},
+	"dependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.15",
+		"vitest": "^2.1.9",
+		"zod": "^4.0.0-beta.20250414T061543"
+	}
 }
