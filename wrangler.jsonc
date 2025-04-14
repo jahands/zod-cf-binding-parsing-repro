@@ -4,14 +4,12 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "soft-fog-5e18",
+	"name": "zod-cf-binding-parsing-repro",
 	"main": "src/index.ts",
-	"compatibility_date": "2025-04-14",
+	"compatibility_date": "2025-04-09",
 	"migrations": [
 		{
-			"new_sqlite_classes": [
-				"MyDurableObject"
-			],
+			"new_sqlite_classes": ["MyDurableObject"],
 			"tag": "v1"
 		}
 	],

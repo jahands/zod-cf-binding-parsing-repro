@@ -1,13 +1,18 @@
 # zod-cf-binding-parsing
 
+Prerequisites:
+
+- node 22
+- pnpm 10
+
 First, install dependencies:
 
 ```sh
-npm install
+pnpm install
 ```
 
-Next, run tests with:
+Next, run tests:
 
 ```
-npm test
+pnpm test
 ```
