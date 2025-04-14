@@ -1,6 +1,12 @@
 # zod-cf-binding-parsing
 
-Run with:
+First, install dependencies:
+
+```sh
+npm install
+```
+
+Next, run tests with:
 
 ```
 npm test
