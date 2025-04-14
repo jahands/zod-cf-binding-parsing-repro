@@ -1,0 +1,21 @@
+{
+  "name": "stackblitz-starters-i1oma4o6",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20250414.0",
+    "zod": "^4.0.0-beta.20250414T061543",
+    "zx": "^8.5.2"
+  },
+  "scripts": {
+    "test": "npm i && npx vitest run"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.8.15",
+    "tsx": "^4.19.3",
+    "vitest": "^2.1.9"
+  }
+}
