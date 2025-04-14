@@ -8,7 +8,7 @@
     "zx": "^8.5.2"
   },
   "scripts": {
-    "test": "npm i && npx vitest run"
+    "test": "vitest run"
   },
   "author": "",
   "license": "ISC",
